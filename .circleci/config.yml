@@ -12,5 +12,10 @@ jobs:
       - run:
           name: run build
           command: |
-            dep ensure
+            dep ensure -update
             go build -v
+      - run:
+          name: run checkstyle
+          command: |
+            gocheckstyle -reporter=xml -config=.gostyle 2>gostyle.xml
+      - run: ./scripts/run-gocheckstyle.sh
