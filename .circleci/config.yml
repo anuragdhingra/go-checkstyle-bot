@@ -14,3 +14,4 @@ jobs:
           command: |
             dep ensure
             go build -v
+      - run: ./scripts/run-gocheckstyle.sh
