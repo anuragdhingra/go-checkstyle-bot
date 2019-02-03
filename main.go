@@ -1,4 +1,4 @@
-package go_checkstyle_bot
+package main
 
 import (
 	"fmt"
