@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main()  {
+func main() {
 
 	http.HandleFunc("/", Hello)
 
